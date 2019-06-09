@@ -1,48 +1,117 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>My Portfolio</title>
-    <!--Stylesheets-->
-    <link rel="stylesheet" href="index.css">
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        .my-container {
+            display: flex;
+            /* to tell that elements should wrap themselves to next line*/
+            flex-wrap: wrap;
+            width: 100%;
+            background-color: #D8D8D8;
+        }
 
+
+
+        .container-item {
+            height: 300px;
+        }
+
+
+
+        .myFont {
+            font-size: 50px;
+            color: white;
+        }
+
+        .blue {
+            background-color: #0081EA;
+        }
+
+        .red {
+            background-color: #EA000B;
+        }
+
+        .green {
+            background-color: #068400;
+        }
+
+        .purple {
+            background-color: #3F3FBF;
+        }
+
+
+
+        /*use media queries to change the layout*/
+
+        @media screen and (min-width: 768px) {
+
+
+            .blue {
+                width: 50%;
+            }
+
+            .red {
+                width: 50%;
+            }
+
+            .green {
+                width: 50%;
+            }
+
+            .purple {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+
+
+            .blue {
+                width: 50%;
+            }
+
+            .red {
+                width: 50%;
+            }
+
+            .green {
+                width: 100%;
+            }
+
+            .purple {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+
+
+
+            .blue {
+                width: 100%;
+            }
+
+            .red {
+                width: 100%;
+            }
+
+            .green {
+                width: 100%;
+            }
+
+            .purple {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
 <body>
-    <div class="container">
-        <div class="banner">
-            <div class="card">
-                <h1 class="heading">
-                        Hey There! <br>This is<br> Satya.
-                    </h1>
-                <p class="sub-heading">
-                    This place is all about my life.
-                    <br>
-                    <button>See My Journey</button>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda dolores ea et eveniet neque nostrum odio, odit quia sunt. Beatae deleniti dicta dolore eum facilis hic impedit quae saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda dolores ea et eveniet neque nostrum odio, odit quia sunt. Beatae deleniti dicta dolore eum facilis hic impedit quae saepe.
-                <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda dolores ea et eveniet neque nostrum odio, odit quia sunt. Beatae deleniti dicta dolore eum facilis hic impedit quae saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda dolores ea et eveniet neque nostrum odio, odit quia sunt. Beatae deleniti dicta dolore eum facilis hic impedit quae saepe.
-                <br>
-                <br> Lorem ipsum dolor sit amet
-                <div class="icon-group">
-                    <img src="outlook.png" class="icon">
-                    <img src="twitter.png" class="icon">
-                    <img src="linkedin.png" class="icon">
-                    <img src="instagram.png" class="icon">
-                </div>
-            </div>
-            <div class="image">
-                <img src="image.jpg" class="my-image">
-            </div>
-        </div>
+    <div class="my-container">
+        <div class="container-item blue myFont">blue</div>
+        <div class="container-item red myFont">red</div>
+        <div class="container-item green myFont">green</div>
+        <div class="container-item purple myFont">purple</div>
     </div>
 </body>
-
 </html>
